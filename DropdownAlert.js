@@ -478,13 +478,13 @@ export default class DropdownAlert extends Component {
             onLayout={event => this.onLayoutEvent(event)}
           >
             <View style={style}>
-              <SafeAreaView style={StyleSheet.flatten(this.props.safeAreaStyle)}>
+              <View style={StyleSheet.flatten(this.props.safeAreaStyle)}>
                 {this.renderImage(source)}
                 <View style={StyleSheet.flatten(this.props.defaultTextContainer)}>
                   {this.renderTitle()}
                   {this.renderMessage()}
                 </View>
-              </SafeAreaView>
+              </View>
               {this.renderCancel(showCancel)}
             </View>
           </TouchableOpacity>
